@@ -11,6 +11,18 @@ Summary: parallel graph management and execution in heterogeneous computing
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pathos-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pathos-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/pathos-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pathos-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pathos-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pathos-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pathos/badges/version.svg)](https://anaconda.org/conda-forge/pathos)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pathos/badges/downloads.svg)](https://anaconda.org/conda-forge/pathos)
+
 Installing pathos
 =================
 
@@ -66,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pathos-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pathos-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pathos-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pathos-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pathos-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pathos-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pathos/badges/version.svg)](https://anaconda.org/conda-forge/pathos)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pathos/badges/downloads.svg)](https://anaconda.org/conda-forge/pathos)
 
 
 Updating pathos-feedstock
