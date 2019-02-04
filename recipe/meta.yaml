@@ -1,36 +1,29 @@
 {% set name = "pathos" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.3" %}
 
 package:
-  name: pathos
-  version: {{ version }}
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
 
 source:
-  fn: pathos-{{ version }}.zip
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip 
-  md5: d4405b588d7a23ef919fe19527b3fa88
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 954c5b0a8b257c375e35d311c65fa62a210a3d65269195557de38418ac9f61f9
 
 build:
   noarch: python
-  number: 2
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
 
 requirements:
   host:
     - pip
     - python
-    - setuptools
-    - ppft >=1.6.4.5
-    - dill >=0.2.5
-    - pox >=0.2.2
-    - multiprocess >=0.70.4
-
   run:
+    - dill >=0.2.9
+    - multiprocess >=0.70.7
+    - pox >=0.2.5
+    - ppft >=1.6.4.9
     - python
-    - ppft >=1.6.4.5
-    - dill >=0.2.5
-    - pox >=0.2.2
-    - multiprocess >=0.70.4
 
 test:
   imports:
@@ -48,3 +41,4 @@ about:
 extra:
   recipe-maintainers:
     - jschueller
+    - mariusvniekerk
