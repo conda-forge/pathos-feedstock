@@ -3,9 +3,9 @@ About pathos
 
 Home: http://trac.mystic.cacr.caltech.edu/project/pathos/wiki.html
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: parallel graph management and execution in heterogeneous computing
 
@@ -118,4 +118,5 @@ Feedstock Maintainers
 
 * [@jschueller](https://github.com/jschueller/)
 * [@mariusvniekerk](https://github.com/mariusvniekerk/)
+* [@synapticarbors](https://github.com/synapticarbors/)
 
