@@ -34,7 +34,7 @@ test:
 
 about:
   home: http://trac.mystic.cacr.caltech.edu/project/pathos/wiki.html
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: parallel graph management and execution in heterogeneous computing
 
