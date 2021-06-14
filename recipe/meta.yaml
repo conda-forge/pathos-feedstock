@@ -1,5 +1,5 @@
 {% set name = "pathos" %}
-{% set version = "0.2.7" %}
+{% set version = "0.2.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
-  sha256: 383449988a85f18943610f480f5f3c2077de9e0a2bfa3833c9b6346fe7dacc1b
+  sha256: 1f0f27a90f7ab66c423ba796529000fde9360d17b2d8e50097641ff405fc6f15
 
 build:
   noarch: python
