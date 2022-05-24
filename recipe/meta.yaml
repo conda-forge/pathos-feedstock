@@ -1,13 +1,13 @@
 {% set name = "pathos" %}
-{% set version = "0.2.8" %}
+{% set version = "0.2.9" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
-  sha256: 1f0f27a90f7ab66c423ba796529000fde9360d17b2d8e50097641ff405fc6f15
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: a8dbddcd3d9af32ada7c6dc088d845588c513a29a0ba19ab9f64c5cd83692934
 
 build:
   noarch: python
