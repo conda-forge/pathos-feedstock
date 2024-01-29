@@ -17,13 +17,13 @@ build:
 requirements:
   host:
     - pip
-    - python =2.7|>=3.6
+    - python >=3.8
   run:
-    - dill >=0.3.5.1
-    - multiprocess >=0.70.13
-    - pox >=0.3.1
-    - ppft >=1.7.6.5
-    - python =2.7|>=3.6
+    - dill >=0.3.8
+    - multiprocess >=0.70.16
+    - pox >=0.3.4
+    - ppft >=1.7.6.8
+    - python >=3.8
 
 test:
   imports:
