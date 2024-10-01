@@ -18,11 +18,12 @@ requirements:
   host:
     - pip
     - python >=3.8
+    - setuptools >=42
   run:
-    - dill >=0.3.8
-    - multiprocess >=0.70.16
-    - pox >=0.3.4
-    - ppft >=1.7.6.8
+    - dill >=0.3.9
+    - multiprocess >=0.70.17
+    - pox >=0.3.5
+    - ppft >=1.7.6.9
     - python >=3.8
 
 test:
