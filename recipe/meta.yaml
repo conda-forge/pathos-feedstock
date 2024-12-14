@@ -6,25 +6,25 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: dcb2a5f321aa34ca541c1c1861011ea49df357bb908379c21dd5741f666e0a58
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools >=42
   run:
     - dill >=0.3.9
     - multiprocess >=0.70.17
     - pox >=0.3.5
     - ppft >=1.7.6.9
-    - python >=3.8
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -34,6 +34,7 @@ test:
     - pathos.xmlrpc
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
