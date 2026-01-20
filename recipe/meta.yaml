@@ -1,5 +1,5 @@
 {% set name = "pathos" %}
-{% set version = "0.3.4" %}
+{% set version = "0.3.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bad4912d0ef865654a7cc478da65f2e1d5b69f3d92c4a7d9c9845657783c0754
+  sha256: 8fe041b8545c5d3880a038f866022bdebf935e5cf68f56ed3407cb7e65193a61
 
 build:
   noarch: python
@@ -20,10 +20,10 @@ requirements:
     - python {{ python_min }}
     - setuptools >=42
   run:
-    - dill >=0.4.0
-    - multiprocess >=0.70.18
-    - pox >=0.3.6
-    - ppft >=1.7.7
+    - dill >=0.4.1
+    - multiprocess >=0.70.19
+    - pox >=0.3.7
+    - ppft >=1.7.8
     - python >={{ python_min }}
 
 test:
